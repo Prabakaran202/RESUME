@@ -3,266 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prabakaran</title>
-    <link rel="icon" type="image/x-icon" href="\img\fpic.webp">
-    <link rel="stylesheet" href="styles.css">
+    <title>Prabakaran P - Resume</title>
     <style>
-       body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-fieldset {
-    background: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-}
+        fieldset {
+            background: #fff;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            border: 1px solid #ddd;
+        }
 
-legend {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-}
+        .header-section {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 15px;
+        }
 
-h1, h2, h3, h4 {
-    margin-bottom: 10px;
-}
+        .header-section h1 {
+            margin: 0 0 5px 0;
+            font-size: 2.2rem;
+            color: #222;
+        }
 
-address {
-    font-style: normal;
-    margin-bottom: 20px;
-}
+        .header-section h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+            color: #007BFF;
+            font-weight: normal;
+        }
 
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 5px;
+        }
 
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
 
-a:hover {
-    text-decoration: underline;
-}
+        h3 {
+            color: #333;
+            margin-top: 25px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+        }
 
-.skill-container, #project-div, #Ex-div, #footer-div {
-    margin-bottom: 20px;
-}
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
 
-h3 {
-    color: #555;
-    margin-top: 20px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-}
-/*---------------------------------------------------------------------------------------------------------------*/
+        li {
+            margin-bottom: 5px;
+        }
 
+        .section-item {
+            margin-bottom: 20px;
+        }
+
+        .section-item h4 {
+            margin: 0 0 5px 0;
+            font-size: 1.1rem;
+            color: #222;
+        }
+
+        .section-item p.subtitle {
+            margin: 0 0 10px 0;
+            font-style: italic;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* --- PDF Download Button Style --- */
+        .download-btn {
+            display: block;
+            width: 220px;
+            margin: 30px auto 10px auto;
+            padding: 12px 20px;
+            background-color: #38bdf8;
+            color: #000;
+            text-align: center;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #0284c7;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* --- Print / PDF specific CSS --- */
+        @media print {
+            body {
+                background-color: #fff;
+            }
+            
+            fieldset {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                border: none;
+                max-width: 100%;
+            }
+
+            .download-btn {
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000; 
+            }
+            
+            h3 {
+                page-break-after: avoid;
+            }
+            .section-item {
+                page-break-inside: avoid;
+            }
+        }
     </style>
 </head>
 <body>
-    <fieldset> 
-        <legend><h1>RESUME</h1></legend>
-        <h2>Prabakaran P</h2>
-        <div>
-            <address>
-                Okkur,Pudukkottai
-                tamilnadu-622204
-                <p>Phone Number :-<a href="telto: +916381952844">+916381952844</a></p>
-                <p>Email :-<a href="mailto:prabakaran20020430@gmail.com">prabakaran20020430@gmail.com </a></p>
-            </address> 
+
+    <!-- Download Button -->
+    <button class="download-btn" onclick="window.print()">📥 Download as PDF</button>
+
+    <fieldset>
+        <div class="header-section">
+            <h1>PRABAKARAN P[span_0](start_span)[span_0](end_span)</h1>
+            <h2>Backend Developer[span_1](start_span)[span_1](end_span)</h2>
+            <div class="contact-info">
+                Tamil Nadu[span_2](start_span)[span_2](end_span) | 
+                <a href="tel:6381952844">6381952844[span_3](start_span)[span_3](end_span)</a> | 
+                <a href="mailto:prabakaran20020430@gmail.com">prabakaran20020430@gmail.com[span_4](start_span)[span_4](end_span)</a><br>
+                GitHub: <a href="https://github.com/Prabakaran202">github.com/Prabakaran202[span_5](start_span)[span_5](end_span)</a> | 
+                LinkedIn: <a href="https://linkedin.com/in/prabakaran-p">linkedin.com/in/prabakaran-p[span_6](start_span)[span_6](end_span)</a>
+            </div>
         </div>
-<h3>SUMMARY:-</h3>
-    <P style="font-family: Georgia, 'Times New Roman', Times, serif;">Backend-focused Developer (Fresher) with practical knowledge in Python and FastAPI, experienced in building basic REST APIs and understanding backend workflows.
-Familiar with JavaScript fundamentals and basic frontend development using HTML, CSS, and JavaScript for simple UI and API integration.
-Has experience working with Git/GitHub, CMS platforms, and academic projects as part of BCA studies.
-Actively learning backend architectures, databases, and automation, with a clear focus on backend development. </P>
 
-<div class="skill-contenaier">
-    <div class="skill-contenaier">
-        <h4>Frontend Developement:-</h4>
+        <h3>OBJECTIVE</h3>
+        <p>
+            Self-taught backend developer and BCA student with hands-on experience building REST APIs, CLI tools, and full-stack web applications.[span_7](start_span)[span_7](end_span) Passionate about Python, FastAPI, and Linux systems.[span_8](start_span)[span_8](end_span) Looking for an entry-level backend developer role to contribute to real-world projects and grow within a development team.[span_9](start_span)[span_9](end_span)
+        </p>
+
+        <h3>EDUCATION</h3>
+        <div class="section-item">
+            <h4>Bachelor of Computer Applications (BCA)[span_10](start_span)[span_10](end_span)</h4>
+            <p class="subtitle">Bharathidasan University, Tamil Nadu[span_11](start_span)[span_11](end_span) | 2023-2026 (Expected)[span_12](start_span)[span_12](end_span)</p>
+        </div>
+
+        <h3>TECHNICAL SKILLS</h3>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>javascript</li>
-            <li>DOM manipulation</li>
-
+            <li><strong>Languages:</strong> Python (Advanced), JavaScript, Bash Scripting, HTML5, CSS3, C (Compiler Development)[span_13](start_span)[span_13](end_span)</li>
+            <li><strong>Backend:</strong> FastAPI, SQLAlchemy, REST API Design, JWT Authentication[span_14](start_span)[span_14](end_span)</li>
+            <li><strong>Databases:</strong> PostgreSQL, Supabase[span_15](start_span)[span_15](end_span)</li>
+            <li><strong>Tools & DevOps:</strong> Git, GitHub, GitHub Actions, Linux (Arch Linux), CI/CD Pipelines[span_16](start_span)[span_16](end_span)</li>
+            <li><strong>Deployment:</strong> Render, Netlify, PyPI, AUR (Arch User Repository)[span_17](start_span)[span_17](end_span)</li>
         </ul>
 
-    </div>
-   <div class="skill-contenaier">
-    <h4>
-        Frameworks & Libraies:- 
+        <h3>PROJECTS</h3>
+        
+        <div class="section-item">
+            <h4>Tamizhi - Tamil-Syntax Programming Language | C, LLVM, Clang[span_18](start_span)[span_18](end_span)</h4>
+            <ul>
+                <li>Designed and built a compiled programming language with Tamil-syntax keywords targeting C-level performance.[span_19](start_span)[span_19](end_span)</li>
+                <li>Implemented a complete compiler pipeline: lexer, parser, AST, and LLVM-based code generation with O2 optimization.[span_20](start_span)[span_20](end_span)</li>
+                <li>Resolved critical issues including pass manager migration, builder repositioning, and linker symbol conflicts.[span_21](start_span)[span_21](end_span)</li>
+                <li>Set up GitHub Actions workflows for automated builds and release distribution.[span_22](start_span)[span_22](end_span)</li>
+            </ul>
+        </div>
 
-    </h4>
+        <div class="section-item">
+            <h4>bdh-fastapi-new - FastAPI Project Scaffolding CLI | Python, FastAPI[span_23](start_span)[span_23](end_span)</h4>
+            <ul>
+                <li>Published a PyPI CLI tool for FastAPI project scaffolding - received 3,600+ downloads in the first week.[span_24](start_span)[span_24](end_span)</li>
+                <li>Implemented --ai and --admin flags for Al-ready and admin-ready project templates.[span_25](start_span)[span_25](end_span)</li>
+                <li>Configured automated PyPI deployment using GitHub Actions Trusted Publisher workflows.[span_26](start_span)[span_26](end_span)</li>
+            </ul>
+        </div>
+
+        <div class="section-item">
+            <h4>BDH Linux - Developer CLI Tool | Python, Bash[span_27](start_span)[span_27](end_span)</h4>
+            <ul>
+                <li>Built an open-source CLI tool for Linux workflow automation targeting backend developers.[span_28](start_span)[span_28](end_span)</li>
+                <li>Published to both PyPI and the Arch Linux AUR (yay -S bdh-linux), managing full PKGBUILD lifecycle.[span_29](start_span)[span_29](end_span)</li>
+            </ul>
+        </div>
+
+        <div class="section-item">
+            <h4>AI API Builder - Multi-Model Al Gateway | FastAPI, Groq, Gemini[span_30](start_span)[span_30](end_span)</h4>
+            <ul>
+                <li>Built and deployed a FastAPI-based Al gateway with automatic provider fallback between Groq and Gemini.[span_31](start_span)[span_31](end_span)</li>
+                <li>Designed RESTful endpoints with response normalization across multiple LLM providers.[span_32](start_span)[span_32](end_span)</li>
+            </ul>
+        </div>
+
+        <div class="section-item">
+            <h4>4S Mobiles - Business Management Web App | React, FastAPI, PostgreSQL[span_33](start_span)[span_33](end_span)</h4>
+            <ul>
+                <li>Developed a full-stack customer service management platform for a retail business.[span_34](start_span)[span_34](end_span)</li>
+                <li>Implemented JWT authentication, Supabase integration, and deployed backend on Render with frontend on Netlify.[span_35](start_span)[span_35](end_span)</li>
+            </ul>
+        </div>
+
+        <h3>ACHIEVEMENTS & HIGHLIGHTS</h3>
         <ul>
-            <li>Basics to React.js</li>
-            <li>Fastapi</li>
+            <li>3,600+ PyPl downloads for bdh-fastapi-new within the first week of launch.[span_36](start_span)[span_36](end_span)</li>
+            <li>Built and published packages across PyPI and Arch Linux AUR ecosystems.[span_37](start_span)[span_37](end_span)</li>
+            <li>Developed a working compiler using LLVM infrastructure targeting ARM64 and x86.[span_38](start_span)[span_38](end_span)</li>
+            <li>Hands-on experience with Linux (Arch Linux) as daily development environment.[span_39](start_span)[span_39](end_span)</li>
         </ul>
-    <h4>Programming Language:-</h4>
-    <ul>
-        <li>Python</li>
-        <li>javascript</li><!--
-        <li>Php</li>
-        <li>C Language</li>
-        <li>C++</li>
-        --->
-    </ul>
-    <h4>Version Control:</h4>
-    <ul><li>Git  &  Github</li></ul>
-   </div>
-    <div class="skill-contenaier">
-        <h4>Tools & Platforms </h4>
-    <ul>
-        <li>VS Code</li>
-        <li>Browser Tools</li>
-    </ul>
-    <h4>Soft Skill:-</h4>
-    <ul>
-        <li>Proble Solving</li>
-        <li>Attention to detail</li>
-        <li>Communication</li>
-    </ul>
-    </div>
-
-</div>
-     <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Trade-Pro</h3>
-        <p><strong>Duration:</strong> Dec 2025 – Present</p>
-        <p>
-            A trading-related web application built using Next.js and Firebase.
-            Focused on real-time data handling and responsive UI.
-        </p>
-        <p><strong>Skills:</strong> Next.js, JavaScript, CSS, Firebase Firestore, GitHub</p>
-        <p>
-            <a href="YOUR_GITHUB_LINK_HERE" target="_blank">View Project</a>
-        </p>
-    </div>
-
-    <hr>
-
-    <div class="project">
-        <h3>Local Delivery Express</h3>
-        <p><strong>Duration:</strong> Dec 2025 – Present</p>
-        <p>
-            A local pickup and delivery service application designed to manage 
-            small-item deliveries such as documents, laptops, keys, and parcels efficiently.
-        </p>
-        <p><strong>Skills:</strong> Python, FastAPI, HTML5, JavaScript, GitHub</p>
-        <p>
-            <a href="https://github.com/Prabakaran202/Local-Express" target="_blank">
-                GitHub Repository
-            </a>
-        </p>
-    </div>
-
-    <hr>
-
-    <div class="project">
-        <h3>Ecommerce Website</h3>
-        <p><strong>Duration:</strong> Apr 2024 – Apr 2024</p>
-        <p>
-            Developed an ecommerce frontend with Django backend integration.
-            Implemented product listing, authentication, and cart features.
-        </p>
-        <p><strong>Skills:</strong> HTML5, Django, GitHub</p>
-    </div>
-
-</section>
-<section>
-    <h2>Experience</h2>
-
-    <!-- Open Source Maintainer -->
-    <div>
-        <h3>Open-Source Maintainer</h3>
-        <p><strong>BackendDeveloperHub (BDH)</strong> | Self-Employed</p>
-        <p><strong>Duration:</strong> Jan 2026 – Present | Remote</p>
-        <ul>
-            <li>Maintaining BackendDeveloperHub (BDH), an open-source learning community.</li>
-            <li>Developing and reviewing REST APIs for backend projects.</li>
-            <li>Managing virtual environments (venv) and project dependencies.</li>
-            <li>Guiding contributors in backend development best practices.</li>
-        </ul>
-        <p><strong>Skills:</strong> Python, REST API Development, Git, Virtual Environments</p>
-    </div>
-
-    <br>
-
-    <!-- Full Stack Web Development Intern -->
-    <div>
-        <h3>Full Stack Web Development Intern</h3>
-        <p><strong>ElevanceSkills</strong> | Internship</p>
-        <p><strong>Duration:</strong> Dec 2025 – Present | Remote</p>
-        <ul>
-            <li>Developed and maintained web applications using modern frameworks.</li>
-            <li>Integrated Firebase Firestore for database management.</li>
-            <li>Worked on frontend design using CSS and JavaScript.</li>
-            <li>Collaborated on the Trade-Pro project.</li>
-        </ul>
-        <p><strong>Skills:</strong> Firebase, JavaScript, CSS, GitHub</p>
-    </div>
-
-    <br>
-
-    <!-- Software Trainee -->
-    <div>
-        <h3>Software Trainee</h3>
-        <p><strong>Aura Harks Technology Pvt Ltd</strong> | Internship</p>
-        <p><strong>Duration:</strong> May 2024 | Remote</p>
-        <ul>
-            <li>Worked on ecommerce web application development.</li>
-            <li>Assisted in backend integration using Django.</li>
-            <li>Developed frontend components using HTML5.</li>
-        </ul>
-        <p><strong>Skills:</strong> Python, Django, HTML5</p>
-    </div>
-
-</section>
-<div id="footer-div">
-    <h3>EDUCATION</h3>
-    <ul>
-        <li><strong><abbr title="Bachelor of Computer Applications">BCA</abbr></strong> (Pursuing) - IITT College of Fashion, Tiruppur (2024)</li>
-        <li><strong><abbr title="Higher Secondary Certificate">HSC</abbr></strong>-  Government Higher Secondary School, Koduvai (2020)
-        </li>
-    </ul>
-
-</div>
-<div>
-    <h3>
-        ADDITIONAL INFORMATION
-    </h3>
-    <p>Portfolio Link:<a href="https://prabakaran202.github.io/prabaportfoli/Intex.html" target="_self"> link</a></p>
-    <p>Certifications:<ol type="i">
-        <li>
-            <a href="\img\basicpy.jpeg" target="_self">Basic python Certifications</a>
-        </li>
-        <li>
-            <a href="\img\advancepy.jpeg" target="">advance python Certifications</a>
-        </li>
-
-    </ol>
-    </p>
-    <p>Languages:-Tamil,English<a></a></p>
-</div>
-
-   
-
-
-
-
-
-
 
     </fieldset>
 </body>
