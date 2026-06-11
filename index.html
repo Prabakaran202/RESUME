@@ -3,144 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prabakaran P - Resume</title>
+    <title>Prabakaran P - Backend Developer Resume</title>
     <style>
+        /* --- Base Styles --- */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #000;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            padding: 30px;
+            line-height: 1.5;
         }
 
-        fieldset {
-            background: #fff;
-            margin: 20px auto;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* --- Resume Container (A4 Proportions) --- */
+        .resume-container {
             max-width: 800px;
-            border: 1px solid #ddd;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
         }
 
-        .header-section {
+        /* --- Header Section --- */
+        .header {
             text-align: center;
-            margin-bottom: 25px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 15px;
-        }
-
-        .header-section h1 {
-            margin: 0 0 5px 0;
-            font-size: 2.2rem;
-            color: #222;
-        }
-
-        .header-section h2 {
-            margin: 0 0 10px 0;
-            font-size: 1.2rem;
-            color: #007BFF;
-            font-weight: normal;
-        }
-
-        .contact-info a {
-            color: #007BFF;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        h3 {
-            color: #333;
-            margin-top: 25px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-            font-size: 1.3rem;
-            text-transform: uppercase;
-        }
-
-        ul {
-            padding-left: 20px;
-            margin-bottom: 15px;
-        }
-
-        li {
-            margin-bottom: 5px;
-        }
-
-        .section-item {
             margin-bottom: 20px;
         }
 
-        .section-item h4 {
-            margin: 0 0 5px 0;
-            font-size: 1.1rem;
-            color: #222;
+        .header h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .section-item p.subtitle {
-            margin: 0 0 10px 0;
+        .header h2 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 5px 0 8px 0;
+            color: #333;
+        }
+
+        .header p {
+            font-size: 13px;
+            margin: 0;
+            color: #444;
+        }
+
+        .header a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+            color: #007BFF;
+        }
+
+        /* --- Section Titles --- */
+        h3 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            padding-bottom: 4px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        /* --- Paragraphs & Lists --- */
+        p {
+            font-size: 13px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        /* --- Layout Utility --- */
+        .flex-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .project-title {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .project-stack {
+            font-weight: normal;
             font-style: italic;
-            color: #555;
-            font-size: 0.95rem;
+        }
+
+        .skill-category {
+            font-weight: bold;
         }
 
         /* --- PDF Download Button Style --- */
         .download-btn {
             display: block;
-            width: 220px;
-            margin: 30px auto 10px auto;
-            padding: 12px 20px;
-            background-color: #38bdf8;
-            color: #000;
-            text-align: center;
+            width: fit-content;
+            margin: 0 auto 30px auto;
+            padding: 12px 24px;
+            background-color: #2563eb;
+            color: #ffffff;
             border: none;
             border-radius: 6px;
-            font-size: 16px;
-            font-weight: bold;
+            font-size: 15px;
+            font-weight: 600;
             cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+            transition: all 0.2s ease;
         }
 
         .download-btn:hover {
-            background-color: #0284c7;
-            color: #fff;
+            background-color: #1d4ed8;
             transform: translateY(-2px);
         }
 
-        /* --- Print / PDF specific CSS --- */
+        /* --- Print Specific CSS --- */
         @media print {
             body {
                 background-color: #fff;
-            }
-            
-            fieldset {
-                box-shadow: none;
-                margin: 0;
                 padding: 0;
-                border: none;
+                margin: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                width: 100%;
                 max-width: 100%;
             }
-
             .download-btn {
                 display: none;
             }
-
-            a {
-                text-decoration: none;
-                color: #000; 
-            }
-            
-            h3 {
+            /* Avoid page breaks inside sections */
+            h3, .flex-row, .project-title {
                 page-break-after: avoid;
             }
-            .section-item {
+            ul, p {
                 page-break-inside: avoid;
+            }
+            a {
+                color: #000;
+                text-decoration: none;
             }
         }
     </style>
@@ -148,94 +170,95 @@
 <body>
 
     <!-- Download Button -->
-    <button class="download-btn" onclick="window.print()">📥 Download as PDF</button>
+    <button class="download-btn" onclick="window.print()">📥 Download / Save as PDF</button>
 
-    <fieldset>
-        <div class="header-section">
+    <div class="resume-container">
+        
+        <!-- Header -->
+        <div class="header">
             <h1>PRABAKARAN P[span_0](start_span)[span_0](end_span)</h1>
             <h2>Backend Developer[span_1](start_span)[span_1](end_span)</h2>
-            <div class="contact-info">
+            <p>
                 Tamil Nadu[span_2](start_span)[span_2](end_span) | 
                 <a href="tel:6381952844">6381952844[span_3](start_span)[span_3](end_span)</a> | 
-                <a href="mailto:prabakaran20020430@gmail.com">prabakaran20020430@gmail.com[span_4](start_span)[span_4](end_span)</a><br>
+                <a href="mailto:prabakaran20020430@gmail.com">prabakaran20020430@gmail.com[span_4](start_span)[span_4](end_span)</a>
+            </p>
+            <p>
                 GitHub: <a href="https://github.com/Prabakaran202">github.com/Prabakaran202[span_5](start_span)[span_5](end_span)</a> | 
                 LinkedIn: <a href="https://linkedin.com/in/prabakaran-p">linkedin.com/in/prabakaran-p[span_6](start_span)[span_6](end_span)</a>
-            </div>
+            </p>
         </div>
 
+        <!-- Objective -->
         <h3>OBJECTIVE</h3>
         <p>
             Self-taught backend developer and BCA student with hands-on experience building REST APIs, CLI tools, and full-stack web applications.[span_7](start_span)[span_7](end_span) Passionate about Python, FastAPI, and Linux systems.[span_8](start_span)[span_8](end_span) Looking for an entry-level backend developer role to contribute to real-world projects and grow within a development team.[span_9](start_span)[span_9](end_span)
         </p>
 
+        <!-- Education -->
         <h3>EDUCATION</h3>
-        <div class="section-item">
-            <h4>Bachelor of Computer Applications (BCA)[span_10](start_span)[span_10](end_span)</h4>
-            <p class="subtitle">Bharathidasan University, Tamil Nadu[span_11](start_span)[span_11](end_span) | 2023-2026 (Expected)[span_12](start_span)[span_12](end_span)</p>
+        <div class="flex-row">
+            <div style="font-weight: bold; font-size: 13px;">Bachelor of Computer Applications (BCA)[span_10](start_span)[span_10](end_span)</div>
+            <div style="font-size: 13px;">2023-2026 (Expected)[span_11](start_span)[span_11](end_span)</div>
         </div>
+        <p style="margin-bottom: 15px;">Bharathidasan University, Tamil Nadu[span_12](start_span)[span_12](end_span)</p>
 
+        <!-- Technical Skills -->
         <h3>TECHNICAL SKILLS</h3>
         <ul>
-            <li><strong>Languages:</strong> Python (Advanced), JavaScript, Bash Scripting, HTML5, CSS3, C (Compiler Development)[span_13](start_span)[span_13](end_span)</li>
-            <li><strong>Backend:</strong> FastAPI, SQLAlchemy, REST API Design, JWT Authentication[span_14](start_span)[span_14](end_span)</li>
-            <li><strong>Databases:</strong> PostgreSQL, Supabase[span_15](start_span)[span_15](end_span)</li>
-            <li><strong>Tools & DevOps:</strong> Git, GitHub, GitHub Actions, Linux (Arch Linux), CI/CD Pipelines[span_16](start_span)[span_16](end_span)</li>
-            <li><strong>Deployment:</strong> Render, Netlify, PyPI, AUR (Arch User Repository)[span_17](start_span)[span_17](end_span)</li>
+            <li><span class="skill-category">Languages:</span> Python (Advanced), JavaScript, Bash Scripting, HTML5, CSS3, C (Compiler Development)[span_13](start_span)[span_13](end_span)</li>
+            <li><span class="skill-category">Backend:</span> FastAPI, SQLAlchemy, REST API Design, JWT Authentication[span_14](start_span)[span_14](end_span)</li>
+            <li><span class="skill-category">Databases:</span> PostgreSQL, Supabase[span_15](start_span)[span_15](end_span)</li>
+            <li><span class="skill-category">Tools & DevOps:</span> Git, GitHub, GitHub Actions, Linux (Arch Linux), CI/CD Pipelines[span_16](start_span)[span_16](end_span)</li>
+            <li><span class="skill-category">Deployment:</span> Render, Netlify, PyPI, AUR (Arch User Repository)[span_17](start_span)[span_17](end_span)</li>
         </ul>
 
+        <!-- Projects -->
         <h3>PROJECTS</h3>
         
-        <div class="section-item">
-            <h4>Tamizhi - Tamil-Syntax Programming Language | C, LLVM, Clang[span_18](start_span)[span_18](end_span)</h4>
-            <ul>
-                <li>Designed and built a compiled programming language with Tamil-syntax keywords targeting C-level performance.[span_19](start_span)[span_19](end_span)</li>
-                <li>Implemented a complete compiler pipeline: lexer, parser, AST, and LLVM-based code generation with O2 optimization.[span_20](start_span)[span_20](end_span)</li>
-                <li>Resolved critical issues including pass manager migration, builder repositioning, and linker symbol conflicts.[span_21](start_span)[span_21](end_span)</li>
-                <li>Set up GitHub Actions workflows for automated builds and release distribution.[span_22](start_span)[span_22](end_span)</li>
-            </ul>
-        </div>
-
-        <div class="section-item">
-            <h4>bdh-fastapi-new - FastAPI Project Scaffolding CLI | Python, FastAPI[span_23](start_span)[span_23](end_span)</h4>
-            <ul>
-                <li>Published a PyPI CLI tool for FastAPI project scaffolding - received 3,600+ downloads in the first week.[span_24](start_span)[span_24](end_span)</li>
-                <li>Implemented --ai and --admin flags for Al-ready and admin-ready project templates.[span_25](start_span)[span_25](end_span)</li>
-                <li>Configured automated PyPI deployment using GitHub Actions Trusted Publisher workflows.[span_26](start_span)[span_26](end_span)</li>
-            </ul>
-        </div>
-
-        <div class="section-item">
-            <h4>BDH Linux - Developer CLI Tool | Python, Bash[span_27](start_span)[span_27](end_span)</h4>
-            <ul>
-                <li>Built an open-source CLI tool for Linux workflow automation targeting backend developers.[span_28](start_span)[span_28](end_span)</li>
-                <li>Published to both PyPI and the Arch Linux AUR (yay -S bdh-linux), managing full PKGBUILD lifecycle.[span_29](start_span)[span_29](end_span)</li>
-            </ul>
-        </div>
-
-        <div class="section-item">
-            <h4>AI API Builder - Multi-Model Al Gateway | FastAPI, Groq, Gemini[span_30](start_span)[span_30](end_span)</h4>
-            <ul>
-                <li>Built and deployed a FastAPI-based Al gateway with automatic provider fallback between Groq and Gemini.[span_31](start_span)[span_31](end_span)</li>
-                <li>Designed RESTful endpoints with response normalization across multiple LLM providers.[span_32](start_span)[span_32](end_span)</li>
-            </ul>
-        </div>
-
-        <div class="section-item">
-            <h4>4S Mobiles - Business Management Web App | React, FastAPI, PostgreSQL[span_33](start_span)[span_33](end_span)</h4>
-            <ul>
-                <li>Developed a full-stack customer service management platform for a retail business.[span_34](start_span)[span_34](end_span)</li>
-                <li>Implemented JWT authentication, Supabase integration, and deployed backend on Render with frontend on Netlify.[span_35](start_span)[span_35](end_span)</li>
-            </ul>
-        </div>
-
-        <h3>ACHIEVEMENTS & HIGHLIGHTS</h3>
+        <div class="project-title">Tamizhi - Tamil-Syntax Programming Language <span class="project-stack">| C, LLVM, Clang[span_18](start_span)[span_18](end_span)</span></div>
         <ul>
+            <li>Designed and built a compiled programming language with Tamil-syntax keywords targeting C-level performance.[span_19](start_span)[span_19](end_span)</li>
+            <li>Implemented a complete compiler pipeline: lexer, parser, AST, and LLVM-based code generation with O2 optimization.[span_20](start_span)[span_20](end_span)</li>
+            <li>Resolved critical issues including pass manager migration, builder repositioning, and linker symbol conflicts.[span_21](start_span)[span_21](end_span)</li>
+            <li>Set up GitHub Actions workflows for automated builds and release distribution.[span_22](start_span)[span_22](end_span)</li>
+        </ul>
+
+        <div class="project-title">bdh-fastapi-new - FastAPI Project Scaffolding CLI <span class="project-stack">| Python, FastAPI[span_23](start_span)[span_23](end_span)</span></div>
+        <ul>
+            <li>Published a PyPI CLI tool for FastAPI project scaffolding - received 3,600+ downloads in the first week.[span_24](start_span)[span_24](end_span)</li>
+            <li>Implemented --ai and --admin flags for Al-ready and admin-ready project templates.[span_25](start_span)[span_25](end_span)</li>
+            <li>Configured automated PyPI deployment using GitHub Actions Trusted Publisher workflows.[span_26](start_span)[span_26](end_span)</li>
+        </ul>
+
+        <div class="project-title">BDH Linux - Developer CLI Tool <span class="project-stack">| Python, Bash[span_27](start_span)[span_27](end_span)</span></div>
+        <ul>
+            <li>Built an open-source CLI tool for Linux workflow automation targeting backend developers.[span_28](start_span)[span_28](end_span)</li>
+            <li>Published to both PyPI and the Arch Linux AUR (yay -S bdh-linux), managing full PKGBUILD lifecycle.[span_29](start_span)[span_29](end_span)</li>
+        </ul>
+
+        <div class="project-title">AI API Builder - Multi-Model Al Gateway <span class="project-stack">| FastAPI, Groq, Gemini[span_30](start_span)[span_30](end_span)</span></div>
+        <ul>
+            <li>Built and deployed a FastAPI-based Al gateway with automatic provider fallback between Groq and Gemini.[span_31](start_span)[span_31](end_span)</li>
+            <li>Designed RESTful endpoints with response normalization across multiple LLM providers.[span_32](start_span)[span_32](end_span)</li>
+        </ul>
+
+        <div class="project-title">4S Mobiles - Business Management Web App <span class="project-stack">| React, FastAPI, PostgreSQL[span_33](start_span)[span_33](end_span)</span></div>
+        <ul>
+            <li>Developed a full-stack customer service management platform for a retail business.[span_34](start_span)[span_34](end_span)</li>
+            <li>Implemented JWT authentication, Supabase integration, and deployed backend on Render with frontend on Netlify.[span_35](start_span)[span_35](end_span)</li>
+        </ul>
+
+        <!-- Achievements -->
+        <h3>ACHIEVEMENTS & HIGHLIGHTS</h3>
+        <ul style="margin-bottom: 0;">
             <li>3,600+ PyPl downloads for bdh-fastapi-new within the first week of launch.[span_36](start_span)[span_36](end_span)</li>
             <li>Built and published packages across PyPI and Arch Linux AUR ecosystems.[span_37](start_span)[span_37](end_span)</li>
             <li>Developed a working compiler using LLVM infrastructure targeting ARM64 and x86.[span_38](start_span)[span_38](end_span)</li>
             <li>Hands-on experience with Linux (Arch Linux) as daily development environment.[span_39](start_span)[span_39](end_span)</li>
         </ul>
 
-    </fieldset>
+    </div>
+
 </body>
 </html>
